@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Birthday Event 2026</title>
+<title>Festus Bett Birthday Event 2026</title>
 
 <style>
 *{
@@ -11,195 +11,344 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Arial, sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-background:#f5f5f5;
-color:#333;
+background:#0a0a0a;
+color:white;
 }
 
 header{
-background:linear-gradient(135deg,#ff6b6b,#ffb347);
-color:white;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-padding:60px 20px;
+padding:20px;
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+linear-gradient(135deg,#000,#1a1a1a,#333);
 }
 
 header h1{
 font-size:3rem;
+color:#FFD700;
 margin-bottom:10px;
 }
 
 header p{
 font-size:1.2rem;
+margin:5px 0;
 }
 
-.countdown{
-background:white;
-margin:20px auto;
-max-width:900px;
-padding:20px;
-border-radius:15px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:15px 30px;
+background:#FFD700;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:30px;
 }
 
 .section{
-padding:40px 20px;
-max-width:1100px;
+padding:60px 20px;
+max-width:1200px;
 margin:auto;
+}
+
+.section-title{
+text-align:center;
+color:#FFD700;
+margin-bottom:30px;
+font-size:2rem;
 }
 
 .cards{
 display:flex;
 flex-wrap:wrap;
-gap:20px;
 justify-content:center;
+gap:20px;
 }
 
 .card{
-background:white;
-padding:25px;
+background:#161616;
+border:2px solid #FFD700;
 border-radius:15px;
+padding:25px;
 width:320px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
 text-align:center;
+box-shadow:0 0 20px rgba(255,215,0,0.2);
 }
 
-.card h2{
-margin-bottom:15px;
+.card h3{
+color:#FFD700;
 }
 
 .price{
 font-size:2rem;
 font-weight:bold;
-color:#ff6b6b;
 margin:15px 0;
 }
 
-ul{
-list-style:none;
-}
-
-ul li{
-padding:8px;
-}
-
-.payment{
-background:white;
-padding:25px;
+.countdown{
+background:#161616;
+border:2px solid #FFD700;
 border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+padding:25px;
+text-align:center;
+font-size:2rem;
+font-weight:bold;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:#161616;
+}
+
+th,td{
+padding:15px;
+border:1px solid #333;
+text-align:center;
+}
+
+th{
+background:#FFD700;
+color:black;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery div{
+height:200px;
+background:#161616;
+border:2px dashed #FFD700;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:10px;
 }
 
 form{
-background:white;
+background:#161616;
 padding:25px;
 border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-input,select{
+input,select,textarea{
 width:100%;
 padding:12px;
 margin:10px 0;
-border:1px solid #ccc;
+border:none;
 border-radius:8px;
 }
 
 button{
 width:100%;
-padding:12px;
+padding:15px;
+background:#FFD700;
+color:black;
+font-weight:bold;
 border:none;
-background:#ff6b6b;
-color:white;
-font-size:16px;
 border-radius:8px;
 cursor:pointer;
 }
 
-button:hover{
-opacity:0.9;
-}
-
 footer{
-background:#222;
-color:white;
+background:#111;
+padding:30px;
 text-align:center;
-padding:20px;
-margin-top:30px;
+margin-top:50px;
 }
 
 .whatsapp{
 position:fixed;
-bottom:20px;
 right:20px;
+bottom:20px;
 background:#25D366;
 color:white;
 padding:15px 18px;
 border-radius:50%;
-font-size:25px;
 text-decoration:none;
-box-shadow:0 5px 10px rgba(0,0,0,0.2);
+font-size:24px;
+}
+
+.badge{
+display:inline-block;
+background:#FFD700;
+color:black;
+padding:8px 15px;
+border-radius:20px;
+margin:5px;
+font-weight:bold;
 }
 </style>
+
 </head>
 <body>
 
 <header>
-<h1>🎉 Birthday Event 2026 🎉</h1>
-<p>31 May 2026 | Nuru Palace Hotel, Nakuru</p>
-</header>
 
-<div class="countdown">
-<h2>Countdown to Event</h2>
-<h1 id="timer"></h1>
+<h1>🎉 FESTUS BETT BIRTHDAY EVENT 2026 🎉</h1>
+
+<p>📍 Nuru Palace Hotel, Nakuru</p>
+<p>📅 31 May 2026</p>
+
+<div>
+<span class="badge">VIP KSh 500</span>
+<span class="badge">Regular KSh 300</span>
 </div>
 
+<a href="#tickets" class="btn">Get Ticket</a>
+
+</header>
+
 <section class="section">
-<h2 style="text-align:center;margin-bottom:20px;">Ticket Packages</h2>
+<h2 class="section-title">⏳ Countdown To Event</h2>
+<div class="countdown" id="timer"></div>
+</section>
+
+<section class="section" id="tickets">
+
+<h2 class="section-title">🎟 Ticket Packages</h2>
 
 <div class="cards">
 
 <div class="card">
-<h2>🌟 VIP Ticket</h2>
+<h3>🌟 VIP Ticket</h3>
 <div class="price">KSh 500</div>
-<ul>
-<li>Priority Entry</li>
-<li>Reserved Seating</li>
-<li>Refreshments</li>
-<li>Premium Experience</li>
-</ul>
+<p>✔ Priority Entry</p>
+<p>✔ Reserved Seating</p>
+<p>✔ Refreshments</p>
+<p>✔ Premium Experience</p>
+<p>✔ Exclusive Photos</p>
 </div>
 
 <div class="card">
-<h2>🎟️ Regular Ticket</h2>
+<h3>🎫 Regular Ticket</h3>
 <div class="price">KSh 300</div>
-<ul>
-<li>General Admission</li>
-<li>Access to Main Event</li>
-<li>Entertainment</li>
-<li>Birthday Celebration</li>
-</ul>
+<p>✔ General Admission</p>
+<p>✔ Event Access</p>
+<p>✔ Entertainment</p>
+<p>✔ Birthday Celebration</p>
 </div>
 
 </div>
 </section>
 
 <section class="section">
-<div class="payment">
-<h2>💳 Payment Information</h2>
-<br>
+
+<h2 class="section-title">📅 Event Program</h2>
+
+<div class="card" style="width:100%">
+<p>2:00 PM - Guest Arrival</p>
+<p>3:00 PM - Opening Session</p>
+<p>4:00 PM - Games & Entertainment</p>
+<p>6:00 PM - Birthday Celebration</p>
+<p>7:00 PM - Cake Cutting</p>
+<p>8:00 PM - Music & Networking</p>
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">⭐ VIP vs Regular</h2>
+
+<table>
+
+<tr>
+<th>Feature</th>
+<th>VIP</th>
+<th>Regular</th>
+</tr>
+
+<tr>
+<td>Priority Entry</td>
+<td>✔</td>
+<td>✖</td>
+</tr>
+
+<tr>
+<td>Reserved Seating</td>
+<td>✔</td>
+<td>✖</td>
+</tr>
+
+<tr>
+<td>Refreshments</td>
+<td>✔</td>
+<td>✖</td>
+</tr>
+
+<tr>
+<td>Main Event Access</td>
+<td>✔</td>
+<td>✔</td>
+</tr>
+
+</table>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">💳 Payment Information</h2>
+
+<div class="card" style="width:100%">
 <p><strong>M-Pesa Till Number:</strong> Coming Soon</p>
-<p><strong>Account:</strong> Birthday Event 2026</p>
-<br>
-<p>After payment, fill the registration form below.</p>
+<p>After payment, submit your details below.</p>
 </div>
+
 </section>
 
 <section class="section">
+
+<h2 class="section-title">📸 Event Gallery</h2>
+
+<div class="gallery">
+<div>Poster Here</div>
+<div>Venue Photo</div>
+<div>Event Memories</div>
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">📍 Venue</h2>
+
+<div class="card" style="width:100%">
+<p>Nuru Palace Hotel, Nakuru</p>
+<p>Google Maps can be added later.</p>
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">❓ FAQ</h2>
+
+<div class="card" style="width:100%">
+<p><strong>Can I buy at the gate?</strong> Yes, if tickets are available.</p>
+<br>
+<p><strong>Can I transfer my ticket?</strong> Contact the organizer.</p>
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">📝 Register</h2>
+
 <form>
-<h2>📝 Register Your Ticket</h2>
 
 <input type="text" placeholder="Full Name" required>
 
@@ -207,48 +356,67 @@ box-shadow:0 5px 10px rgba(0,0,0,0.2);
 
 <input type="email" placeholder="Email Address">
 
-<select required>
-<option value="">Select Ticket Type</option>
+<select>
 <option>VIP Ticket</option>
 <option>Regular Ticket</option>
 </select>
 
-<input type="text" placeholder="M-Pesa Transaction Code" required>
+<input type="text" placeholder="M-Pesa Transaction Code">
+
+<textarea placeholder="Additional Notes"></textarea>
 
 <button type="submit">Submit Registration</button>
+
 </form>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">📞 Contact</h2>
+
+<div class="card" style="width:100%">
+<p><strong>Host:</strong> Festus Bett</p>
+<p><strong>Phone:</strong> 0734208783</p>
+</div>
+
 </section>
 
 <footer>
-<h3>📍 Nuru Palace Hotel, Nakuru</h3>
-<p>📅 31 May 2026</p>
-<p>📞 Contact Number: Coming Soon</p>
+
+<h3>Festus Bett Birthday Event 2026</h3>
+<p>Nuru Palace Hotel, Nakuru</p>
+<p>Contact: 0734208783</p>
+
 </footer>
 
-<a href="#" class="whatsapp">💬</a>
+<a class="whatsapp"
+href="https://wa.me/254734208783"
+target="_blank">💬</a>
 
 <script>
+
 var countDownDate = new Date("May 31, 2026 00:00:00").getTime();
 
-var x = setInterval(function() {
+setInterval(function(){
 
 var now = new Date().getTime();
 var distance = countDownDate - now;
 
-var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+var days = Math.floor(distance / (1000*60*60*24));
+var hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+var minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+var seconds = Math.floor((distance % (1000*60)) / 1000);
 
 document.getElementById("timer").innerHTML =
-days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+days + " Days " +
+hours + " Hours " +
+minutes + " Minutes " +
+seconds + " Seconds";
 
-if (distance < 0) {
-clearInterval(x);
-document.getElementById("timer").innerHTML = "EVENT STARTED";
-}
-}, 1000);
+},1000);
+
 </script>
 
 </body>
-</html>
+  </html>
